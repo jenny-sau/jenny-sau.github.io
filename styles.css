@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
   color: #e0e0e0;
   background-color:hsl(250, 24%, 9%);
+  overflow-x: hidden;
 }
 
 /* Smooth scroll avec offset pour navbar */
@@ -78,14 +79,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 24px;
   font-weight: 700;
   color: #ffffff;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   margin-bottom: 12px;
   font-weight: 600;
   color: #f0f0f0;
@@ -214,18 +215,29 @@ p {
 }
 
 /* WORK SECTION */
+
+
 #work {
   padding-top: 0px;
 }
 
+
+
 .project-bg {
   background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
-  padding: 30px;
+  padding: 40px;
   border-radius: 16px;
-  margin-top: 0px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
   border: 1px solid #2a2a2a;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1100px;
+}
 }
 
 .project-bg:hover {
@@ -277,6 +289,7 @@ p {
   color: #667eea;
   font-size: 1.2rem;
 }
+
 
 /* Project tagline */
 .project-tagline {
@@ -359,16 +372,18 @@ p {
 }
 
 .project-image {
-  display: block;
   width: 100%;
-  max-width: 100%;
-  max-height: 420px;
-  margin: 32px auto 0;
+  max-height: 420px;   /* image plus grande */
   object-fit: contain;
   border-radius: 12px;
-  background-color: #fff;
   padding: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  
+}
+
+#project-mastermind .project-image {
+  #project-mastermind .project-image {
+  aspect-ratio: 3 / 4;
+}
 }
 
 /* Learning section */
@@ -405,6 +420,23 @@ p {
   left: 0;
   color: #667eea;
   font-size: 1.2rem;
+}
+/* ===== FULL PAGE PROJECTS ===== */
+.projects-slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-slide {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-bg {
+  width: 100%;
+  max-width: 900px;
 }
 
 /* CONTACT */
@@ -605,6 +637,10 @@ footer {
     padding-top: 18px;
   }
  
+.project-bg {
+  display: block;
+  padding: 28px 20px;
+}
 
   /* Contact */
   #contact {
@@ -723,4 +759,5 @@ footer {
   .social-icon span {
     font-size: 0.85rem;
   }
+  
 }

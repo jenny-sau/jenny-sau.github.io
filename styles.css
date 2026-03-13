@@ -11,7 +11,11 @@ body {
     sans-serif;
   line-height: 1.6;
   color: #e0e0e0;
-  background-color:hsl(250, 24%, 9%);
+  background: linear-gradient(
+    180deg,
+    #0f172a 0%,
+    #111827 100%
+  );
   overflow-x: hidden;
 }
 
@@ -226,7 +230,7 @@ p {
 
 
 .project-bg {
-  background: linear-gradient(135deg, #22222a 0%, #18181f 100%);
+  background: #1e293b;
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);

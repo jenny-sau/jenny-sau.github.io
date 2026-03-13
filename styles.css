@@ -216,7 +216,9 @@ p {
 
 /* WORK SECTION */
 
-
+#work h2 {
+  margin-bottom: 40px;
+}
 #work {
   padding-top: 0px;
 }
@@ -224,7 +226,7 @@ p {
 
 
 .project-bg {
-  background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+  background: linear-gradient(135deg, #22222a 0%, #18181f 100%);
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
@@ -238,7 +240,7 @@ p {
   width: 100%;
   max-width: 1100px;
 }
-}
+
 
 .project-bg:hover {
   transform: translateY(-4px);
@@ -381,9 +383,8 @@ p {
 }
 
 #project-mastermind .project-image {
-  #project-mastermind .project-image {
+  max-height: 520px;
   aspect-ratio: 3 / 4;
-}
 }
 
 /* Learning section */
@@ -430,14 +431,11 @@ p {
 .project-slide {
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
-.project-bg {
-  width: 100%;
-  max-width: 900px;
-}
+
 
 /* CONTACT */
 #contact {
@@ -511,6 +509,14 @@ footer {
     flex-direction: column;
     gap: 8px;
   }
+.project-slide {
+    height: auto;
+    min-height: auto;
+    margin-bottom: 24px;
+  }
+.project-bg {
+  display: block;
+}
 
   .nav-name {
     font-size: 1.1rem;
@@ -637,10 +643,7 @@ footer {
     padding-top: 18px;
   }
  
-.project-bg {
-  display: block;
-  padding: 28px 20px;
-}
+
 
   /* Contact */
   #contact {
